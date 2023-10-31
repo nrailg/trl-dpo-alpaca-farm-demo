@@ -108,6 +108,3 @@ if __name__ == '__main__':
     )
     trainer.train()
     trainer.save_model(training_args.output_dir)
-
-    output_dir = os.path.join(training_args.output_dir, "final_checkpoint")
-    trainer.model.save_pretrained(output_dir)
